@@ -25,6 +25,9 @@ public class OrderEntity {
     @Column(nullable = false, precision = 12, scale = 2)
     private BigDecimal subtotal;
 
+    @Column(name = "discount_amount", nullable = false, precision = 12, scale = 2)
+    private BigDecimal discountAmount;
+
     @Column(nullable = false, precision = 12, scale = 2)
     private BigDecimal total;
 
@@ -32,11 +35,12 @@ public class OrderEntity {
     }
 
     public OrderEntity(Long customerId, Instant createdAt, OrderStatus status,
-                       BigDecimal subtotal, BigDecimal total) {
+                       BigDecimal subtotal, BigDecimal discountAmount, BigDecimal total) {
         this.customerId = customerId;
         this.createdAt = createdAt;
         this.status = status;
         this.subtotal = subtotal;
+        this.discountAmount = discountAmount;
         this.total = total;
     }
 
@@ -49,5 +53,6 @@ public class OrderEntity {
     public Instant getCreatedAt() { return createdAt; }
     public OrderStatus getStatus() { return status; }
     public BigDecimal getSubtotal() { return subtotal; }
+    public BigDecimal getDiscountAmount() { return discountAmount; }
     public BigDecimal getTotal() { return total; }
 }

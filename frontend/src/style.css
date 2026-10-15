@@ -10,10 +10,12 @@ h2 { margin: 0 0 18px; }
 label { display: block; font-weight: 700; margin-bottom: 8px; }
 input { width: 100%; border: 1px solid #c8d0da; border-radius: 10px; font: inherit; padding: 12px; }
 .hint, .footnote { color: #667386; font-size: .88rem; }
-.cart-row, .summary-row { display: flex; justify-content: space-between; padding: 13px 0; border-bottom: 1px solid #eef0f3; }
+.cart-row, .summary-row { display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; border-bottom: 1px solid #eef0f3; }
 .cart-row { margin: 22px 0 10px; }
+.summary-row.discount { color: #087443; }
 .summary-row.total { border: 0; font-size: 1.15rem; padding-top: 18px; }
 button { margin-top: 16px; padding: 13px 18px; border: 0; border-radius: 10px; background: #172b4d; color: white; font: inherit; font-weight: 700; cursor: pointer; }
 button:disabled { opacity: .6; cursor: wait; }
 .success-panel { border-left: 4px solid #25815e; }
+.discount-note { color: #087443; font-weight: 700; }
 .error { color: #b42318; white-space: pre-wrap; }
