@@ -5,3 +5,6 @@ frontend/dist/
 .vscode/
 *.iml
 .DS_Store
+
+# Presentation material is bundled locally, not part of the sample application PR.
+/presenter/
