@@ -6,11 +6,11 @@ A deliberately small, end-to-end checkout application for a code-review talk. It
 
 ## Requirements
 
-- Java 21+
+- Java 17+
 - Maven 3.9+
 - Node.js 20+ and npm (for the optional UI)
 
-The project uses Spring Boot 3.5.16 and Java 21. See the official [Spring Boot system requirements](https://docs.spring.io/spring-boot/3.5/system-requirements.html).
+The project uses Spring Boot 3.5.16 and targets Java 17. See the official [Spring Boot system requirements](https://docs.spring.io/spring-boot/3.5/system-requirements.html).
 
 ## Start on the discount feature branch
 
