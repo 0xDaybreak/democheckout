@@ -6,6 +6,7 @@ public record CheckoutResponse(
         Long orderId,
         String status,
         BigDecimal subtotal,
+        BigDecimal discountAmount,
         BigDecimal total,
         String paymentReference
 ) {
